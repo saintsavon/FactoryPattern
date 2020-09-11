@@ -18,7 +18,7 @@ abstract public class Sandwich {
 		System.out.println("Cutting " + name);
 	}
 
-	public void box() {
+	public void wrap() {
 		System.out.println("Wrapping " + name);
 	}
 
@@ -29,7 +29,7 @@ abstract public class Sandwich {
 		display.append(length + "\n");
 		for (String topping : toppings) {
 			display.append(topping + "\n");
-		}
+        }
 		return display.toString();
 	}
 }
