@@ -10,6 +10,6 @@ public class BLTSandwich extends Sandwich {
         bread = ingredientFactory.createBread();
         cheese = ingredientFactory.createCheese();
         meat = ingredientFactory.createMeat();
-        veggies[] = ingredientFactory.createVeggies();
+        veggies = ingredientFactory.createVeggies();
     }
 }
