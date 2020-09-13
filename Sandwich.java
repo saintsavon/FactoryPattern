@@ -1,25 +1,25 @@
 import java.util.*;
 
-abstract public class Sandwich {
+public abstract class Sandwich {
 	String name;
 	String bread;
 	String length;
 	List<String> toppings = new ArrayList<String>();
 
-	public String getName() {
-		return name;
-	}
 
 	public void prepare() {
-		System.out.println("Preparing " + name);
+		System.out.println("Grabbing bread. . . ");
+		System.out.println("Selecting desired meats. . . ");
+		System.out.println("Selecting desired toppings. . . ");
+		System.out.println("Preparing sandwich. . . ");
 	}
 
 	public void cut() {
-		System.out.println("Cutting " + name);
+		System.out.println("Cutting your sandwich");
 	}
 
 	public void wrap() {
-		System.out.println("Wrapping " + name);
+		System.out.println("Wrapping your sandwich");
 	}
 
 	public String toString() {
@@ -32,4 +32,9 @@ abstract public class Sandwich {
         }
 		return display.toString();
 	}
+
+	public String getName() {
+		return name;
+	}
+
 }
