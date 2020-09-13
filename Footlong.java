@@ -8,13 +8,13 @@ public class Footlong extends Deli {
             sandwich = new BLTSandwich(ingredientFactory());
             sandwich.setName("Footlong BLT Sandwich")
         } else if (item.equals("meatball")) {
-            sandwich = new FLMeatballSandwich(ingredientFactory));
+            sandwich = new MeatballSandwich(ingredientFactory));
             sandwich.setName("Footlong Meatball Sandwich")
         } else if (item.equals("BBQ")) {
-            sandwich = new FLBBQSandwich(ingredientFactory());
+            sandwich = new BBQSandwich(ingredientFactory());
             sandwich.setName("Footlong BBQ Sandwich")
         } else if (item.equals("chicken")) {
-            sandwich = new FLChickenSandwich(ingredientFactory());
+            sandwich = new ChickenSandwich(ingredientFactory());
             sandwich.setName("Footlong Chicken Sandwich")
         }
         return sandwich;

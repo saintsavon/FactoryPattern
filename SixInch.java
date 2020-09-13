@@ -5,16 +5,16 @@ public class SixInch extends Deli {
         SandwichIngredientFactory ingredientFactory = new SixInchIngredientFactory();
 
         if (item.equals("bacon")) {
-            sandwich = new SIBLTSandwich(ingredientFactory());
+            sandwich = new BLTSandwich(ingredientFactory());
             sandwich.setName("Six Inch BLT Sandwich")
         } else if (item.equals("meatball")) {
-            sandwich = new SIMeatballSandwich(ingredientFactory));
+            sandwich = new MeatballSandwich(ingredientFactory));
             sandwich.setName("Six Inch Meatball Sandwich")
         } else if (item.equals("BBQ")) {
-            sandwich = new SIBBQSandwich(ingredientFactory());
+            sandwich = new BBQSandwich(ingredientFactory());
             sandwich.setName("Six Inch BBQ Sandwich")
         } else if (item.equals("chicken")) {
-            sandwich = new SIChickenSandwich(ingredientFactory());
+            sandwich = new ChickenSandwich(ingredientFactory());
             sandwich.setName("Six Inch Chicken Sandwich")
         }
         return sandwich;

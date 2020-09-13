@@ -1,7 +1,7 @@
-public class FLBLTSandwich extends Sandwich {
+public class BLTSandwich extends Sandwich {
     SandwichIngredientFactory ingredientFactory;
 
-    public FLBLTSandwich(SandwichIngredientFactory ingredientFactory) {
+    public BLTSandwich(SandwichIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
     }
 
