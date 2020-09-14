@@ -1,11 +1,11 @@
 public class FootlongIngredientFactory implements SandwichIngredientFactory {
 
     public Bread createBread() {
-        return new WheatBread();
+        return new Wheat();
     }
 
     public Cheese createCheese() {
-        return new CheddarCheese();
+        return new Cheddar();
     }
 
     public Meat createMeat() {

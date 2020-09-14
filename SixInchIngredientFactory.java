@@ -1,15 +1,15 @@
 public class SixInchIngredientFactory implements SandwichIngredientFactory {
 
     public Bread createBread() {
-        return new WheatBread();
+        return new White();
     }
 
     public Cheese createCheese() {
-        return new CheddarCheese();
+        return new Mozzarella();
     }
 
     public Meat createMeat() {
-        return new Bacon();
+        return new Pork();
     }
 
     public Veggies[] createVeggies() {

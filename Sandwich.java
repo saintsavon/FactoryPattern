@@ -2,39 +2,56 @@ import java.util.*;
 
 public abstract class Sandwich {
 	String name;
-	String bread;
-	String length;
-	List<String> toppings = new ArrayList<String>();
 
+	Bread bread;
+	Cheese cheese;
+	Meat meat;
+	Veggies veggies[];
 
-	public void prepare() {
-		System.out.println("Grabbing bread. . . ");
-		System.out.println("Selecting desired meats. . . ");
-		System.out.println("Selecting desired toppings. . . ");
-		System.out.println("Preparing sandwich. . . ");
-	}
+	abstract void prepare();
 
-	public void cut() {
+	void cut() {
 		System.out.println("Cutting your sandwich");
 	}
 
-	public void wrap() {
+	void wrap() {
 		System.out.println("Wrapping your sandwich");
 	}
 
-	public String toString() {
-		StringBuffer display = new StringBuffer();
-		display.append("---- " + name + " ----\n");
-		display.append(bread + "\n");
-		display.append(length + "\n");
-		for (String topping : toppings) {
-			display.append(topping + "\n");
-        }
-		return display.toString();
+	void setName(String name) {
+		this.name = name;
 	}
 
-	public String getName() {
+	String getName() {
 		return name;
+	}
+
+	public String toString() {
+		StringBuffer result = new StringBuffer();
+		result.append("---- " + name + " ----\n");
+		if (bread != null) {
+			result.append(bread);
+			result.append("\n");
+		}
+		if (cheese != null) {
+			result.append(cheese);
+			result.append("\n");
+		}
+		if (meat != null) {
+			result.append(meat);
+			result.append("\n");
+		}
+		if (veggies != null) {
+			for (int i = 0; i < veggies.length; i++) {
+				result.append(veggies[i]);
+				if (i < veggies.length-1) {
+					result.append(", ");
+				}
+			}
+			result.append("\n");
+		}
+
+		return result.toString();
 	}
 
 }

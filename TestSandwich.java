@@ -7,25 +7,25 @@ public class TestSandwich {
         Sandwich sandwich = Footlong.orderSandwich("bacon");
         System.out.println("Jaylen ordered a " + sandwich + ".\n");
 
-        Sandwich sandwich = Footlong.orderSandwich("BBQ");
+        sandwich = Footlong.orderSandwich("BBQ");
         System.out.println("Jaylen ordered a " + sandwich + ".\n");
 
-        Sandwich sandwich = Footlong.orderSandwich("chicken");
+        sandwich = Footlong.orderSandwich("chicken");
         System.out.println("Jaylen ordered a " + sandwich + ".\n");
 
-        Sandwich sandwich = Footlong.orderSandwich("meatball");
+        sandwich = Footlong.orderSandwich("meatball");
         System.out.println("Jaylen ordered a " + sandwich + ".\n");
 
-        Sandwich sandwich = SixInch.orderSandwich("bacon");
+        sandwich = SixInch.orderSandwich("bacon");
         System.out.println("Jaylen ordered a " + sandwich + ".\n");
 
-        Sandwich sandwich = SixInch.orderSandwich("BBQ");
+        sandwich = SixInch.orderSandwich("BBQ");
         System.out.println("Jaylen ordered a " + sandwich + ".\n");
 
-        Sandwich sandwich = SixInch.orderSandwich("chicken");
+        sandwich = SixInch.orderSandwich("chicken");
         System.out.println("Jaylen ordered a " + sandwich + ".\n");
 
-        Sandwich sandwich = SixInch.orderSandwich("meatball");
+        sandwich = SixInch.orderSandwich("meatball");
         System.out.println("Jaylen ordered a " + sandwich + ".\n");
     }
 }

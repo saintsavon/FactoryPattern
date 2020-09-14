@@ -1,4 +1,4 @@
-public class Mozzarella implements Meat {
+public class Mozzarella implements Cheese {
     public String toString() {
         return "mozzarella";
     }
