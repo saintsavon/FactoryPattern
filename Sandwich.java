@@ -28,7 +28,7 @@ public abstract class Sandwich {
 
 	public String toString() {
 		StringBuffer result = new StringBuffer();
-		result.append("---- " + name + " ----\n");
+		result.append("  " + name + "  \n");
 		if (bread != null) {
 			result.append(bread);
 			result.append("\n");
