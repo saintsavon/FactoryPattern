@@ -12,6 +12,10 @@ public class AmericanTacoIngredientFactory implements TacoIngredientFactory {
         return new Chicken();
     }
 
+    public Salsa createSalsa() {
+        return new SalsaRojo();
+    }
+
     public Veggies[] createVeggies() {
         Veggies veggies[] = {new Lettuce(), new Tomato()};
         return veggies;

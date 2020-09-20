@@ -4,6 +4,7 @@ public abstract class Taco {
 	Tortilla tortilla;
 	Cheese cheese;
 	Meat meat;
+	Salsa salsa;
 	Veggies veggies[];
 
 	abstract void prepare();
@@ -37,6 +38,10 @@ public abstract class Taco {
 		}
 		if (meat != null) {
 			result.append(meat);
+			result.append("\n");
+		}
+		if (salsa != null) {
+			result.append(salsa);
 			result.append("\n");
 		}
 		if (veggies != null) {

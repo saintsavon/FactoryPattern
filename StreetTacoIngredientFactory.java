@@ -12,6 +12,10 @@ public class StreetTacoIngredientFactory implements TacoIngredientFactory {
         return new Goat();
     }
 
+    public Salsa createSalsa() {
+        return new SalsaVerde();
+    }
+
     public Veggies[] createVeggies() {
         Veggies veggies[] = {new Lettuce(), new Tomato()};
         return veggies;

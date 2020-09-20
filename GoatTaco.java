@@ -10,6 +10,7 @@ public class GoatTaco extends Taco {
         tortilla = ingredientFactory.createTortilla();
         cheese = ingredientFactory.createCheese();
         meat = ingredientFactory.createMeat();
+        salsa = ingredientFactory.createSalsa();
         veggies = ingredientFactory.createVeggies();
     }
 }
