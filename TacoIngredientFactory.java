@@ -1,6 +1,6 @@
-public interface SandwichIngredientFactory {
+public interface TacoIngredientFactory {
 
-    public Bread createBread();
+    public Tortilla createTortilla();
     public Cheese createCheese();
     public Meat createMeat();
     public Veggies[] createVeggies();

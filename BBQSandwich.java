@@ -1,7 +1,7 @@
 public class BBQSandwich extends Sandwich {
-    SandwichIngredientFactory ingredientFactory;
+    TacoIngredientFactory ingredientFactory;
 
-    public BBQSandwich(SandwichIngredientFactory ingredientFactory) {
+    public BBQSandwich(TacoIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
     }
 

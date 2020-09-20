@@ -1,21 +1,19 @@
-import java.util.*;
-
-public abstract class Sandwich {
+public abstract class Taco {
 	String name;
 
-	Bread bread;
+	Tortilla tortilla;
 	Cheese cheese;
 	Meat meat;
 	Veggies veggies[];
 
 	abstract void prepare();
 
-	void cut() {
-		System.out.println("Cutting your sandwich");
+	void shape() {
+		System.out.println("Shaping your taco");
 	}
 
 	void wrap() {
-		System.out.println("Wrapping your sandwich");
+		System.out.println("Wrapping your taco");
 	}
 
 	void setName(String name) {
@@ -29,8 +27,8 @@ public abstract class Sandwich {
 	public String toString() {
 		StringBuffer result = new StringBuffer();
 		result.append(" " + name + ":\n");
-		if (bread != null) {
-			result.append(bread);
+		if (tortilla != null) {
+			result.append(tortilla);
 			result.append("\n");
 		}
 		if (cheese != null) {

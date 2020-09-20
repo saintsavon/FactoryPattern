@@ -1,7 +1,7 @@
-public class SixInchIngredientFactory implements SandwichIngredientFactory {
+public class AmericanTacoIngredientFactory implements TacoIngredientFactory {
 
-    public Bread createBread() {
-        return new White();
+    public Tortilla createTortilla() {
+        return new Flour();
     }
 
     public Cheese createCheese() {

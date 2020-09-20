@@ -1,7 +1,7 @@
-public class FootlongIngredientFactory implements SandwichIngredientFactory {
+public class StreetTacoIngredientFactory implements TacoIngredientFactory {
 
-    public Bread createBread() {
-        return new Wheat();
+    public Tortilla createTortilla() {
+        return new Corn();
     }
 
     public Cheese createCheese() {

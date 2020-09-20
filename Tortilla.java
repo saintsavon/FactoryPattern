@@ -1,3 +1,3 @@
-public interface Bread {
+public interface Tortilla {
     public String toString();
 }
