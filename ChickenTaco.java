@@ -10,5 +10,6 @@ public class ChickenTaco extends Taco {
         tortilla = ingredientFactory.createTortilla();
         cheese = ingredientFactory.createCheese();
         meat = ingredientFactory.createMeat();
+        veggies = ingredientFactory.createVeggies();
     }
 }
