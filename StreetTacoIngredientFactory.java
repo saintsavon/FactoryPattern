@@ -9,7 +9,7 @@ public class StreetTacoIngredientFactory implements TacoIngredientFactory {
     }
 
     public Meat createMeat() {
-        return new Bacon();
+        return new Goat();
     }
 
     public Veggies[] createVeggies() {

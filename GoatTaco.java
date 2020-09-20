@@ -1,12 +1,12 @@
-public class ChickenSandwich extends Taco {
+public class GoatTaco extends Taco {
     TacoIngredientFactory ingredientFactory;
 
-    public ChickenSandwich(TacoIngredientFactory ingredientFactory) {
+    public GoatTaco(TacoIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;
     }
 
     void prepare() {
-        System.out.println("Preparing your sandwich: " + name);
+        System.out.println("Preparing your taco: " + name);
         tortilla = ingredientFactory.createTortilla();
         cheese = ingredientFactory.createCheese();
         meat = ingredientFactory.createMeat();

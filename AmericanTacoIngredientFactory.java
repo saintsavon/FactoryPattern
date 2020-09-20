@@ -9,7 +9,7 @@ public class AmericanTacoIngredientFactory implements TacoIngredientFactory {
     }
 
     public Meat createMeat() {
-        return new Pork();
+        return new Chicken();
     }
 
     public Veggies[] createVeggies() {

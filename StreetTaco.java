@@ -4,20 +4,15 @@ public class StreetTaco extends TacoStand {
         Taco taco = null;
         TacoIngredientFactory ingredientFactory = new StreetTacoIngredientFactory();
 
-        if (item.equals("bacon")) {
-            taco = new BLTTaco(ingredientFactory);
-            taco.setName("Footlong BLT Taco");
-        } else if (item.equals("meatball")) {
-            taco = new MeatballTaco(ingredientFactory);
-            taco.setName("Footlong Meatball Taco");
-        } else if (item.equals("BBQ")) {
-            taco = new BBQTaco(ingredientFactory);
-            taco.setName("Footlong BBQ Taco");
-        } else if (item.equals("chicken")) {
+   
+        if (item.equals("chicken")) {
             taco = new ChickenTaco(ingredientFactory);
-            taco.setName("Footlong Chicken Taco");
+            taco.setName("Chicken Street Taco");
+        } else if (item.equals("goat")) {
+            taco = new GoatTaco(ingredientFactory);
+            taco.setName("Goat Street Taco");
         }
-        return Taco;
+        return taco;
     }
     
 }
